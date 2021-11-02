@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Madness Theatre</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Movie Madness Theatre</h2>
+      
+      <form id="formOne">
+        <h3>Select A Movie and Time</h3>
+
+
+        <div class="form-group">
+          <label for="movies">Select a movie: </label>
+          <select name="movies" id="movies" required>
+            <option value="dune">Dune</option>
+            <option value="notimetodie">James Bond: No Time To Die</option>
+            <option value="venom">Venom: Let There Be Carnage</option>
+            <option value="spiderman">Spiderman: No Way Home</option>
+          </select>
+         
+        </div>
+        <div class="form-group">
+          <label for="date">Choose a date: </label>
+        <input type="date" min='2021-11-02' max='2021-11-07' id="date" name="date" required> 
+       </div>
+       <div class="form-group">
+        <label for="movieTime">Choose a showing time: </label>
+        <select name="movieTime" id="movieTime">
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 AM">12:00 AM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+          <option value="7:00 PM">7:00 PM</option>
+          <option value="8:00 PM">8:00 PM</option>
+          <option value="9:00 PM">9:00 PM</option>
+          <option value="10:00 PM">10:00 PM</option>
+        </select>
+      
+     </div>
+        <div class="form-group">
+          <label for="age">Enter your age: </label>
+          <input type="text" id="age" name="age" required>
+        </div>
+        <button type="submit" class="btn btn-dark">Add to cart</button>
+      </form> 
+
+
+
+  <div id="current-cart">
+    <h3>Cart:</h3>
+    <h4 id="cart"></h4>
+  </div>
+  </div>
+</body>
+</html>
